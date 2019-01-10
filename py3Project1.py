@@ -19,12 +19,12 @@ serverPort = 4242
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName, serverPort))
 
-to_send = b'\xccWhat is the answer to the Ulitmate Question of Life, The Universe, and Everything?'
+to_send = b'\xccWhat is the answer to the Ultimate Question of Life, The Universe, and Everything?'
 
 #send_by_byte(to_send, clientSocket)
 clientSocket.send(to_send)
 
 print("Stopping service ...\n")
-time.sleep(30)
+time.sleep(10)
 clientSocket.close()
 print("Service stopped!")
